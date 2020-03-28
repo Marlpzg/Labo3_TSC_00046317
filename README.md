@@ -4,8 +4,8 @@ Técnicas de Simulación en Computadoras: Tercera práctica de laboratorio
 ## Contenido
 En esta práctica trabajaremos con los siguientes temas:
 
-Método de los elementos finitos para el problema de transferencia de calor
-en una dimensión con funciones de forma lineales y con peso de Galerkin
+<p align="center"> Método de los elementos finitos para el problema de transferencia de calor
+en una dimensión con funciones de forma lineales y con peso de Galerkin </p>
 
 ## Cambios en display_tools.h
 ## Cambios en math_tools.h
