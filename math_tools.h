@@ -128,3 +128,13 @@ void transpose(Matrix M, Matrix &T){
         for(int j=0;j<M.at(0).size();j++)
             T.at(j).at(i) = M.at(i).at(j);
 }
+
+void inverseMatrix(Matrix M, Matrix &Minv){
+    Matrix Cof, Adj;
+    float det = determinant(M);
+    if(det == 0) 
+        exit(EXIT_FAILURE);
+    cofactors(M,Cof);
+    transpose(Cof,Adj);
+    productRealMatrix(1/det,Adj,Minv);
+}
