@@ -18,8 +18,8 @@ Vector createLocalb(int element,mesh &m){
     float Q = m.getParameter(HEAT_SOURCE),
     l = m.getNode(element+1).getX() - m.getNode(element).getX();
     
-    b.push_back(-Q*l/2); 
-    b.push_back(-Q*l/2);
+    b.push_back(Q*l/2); 
+    b.push_back(Q*l/2);
     
     return b;
 }
