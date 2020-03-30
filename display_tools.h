@@ -15,3 +15,19 @@ void showMatrix(Matrix K){
         cout << "]\n";
     }
 }
+
+void showbs(vector<Vector> bs){
+    for(int i=0;i<bs.size();i++){
+        cout << "b del elemento "<< i+1 << ":\n";
+        showVector(bs.at(i));
+        cout << "*************************************\n";
+    }
+}
+
+void showKs(vector<Matrix> Ks){
+    for(int i=0;i<Ks.size();i++){
+        cout << "K del elemento "<< i+1 << ":\n";
+        showMatrix(Ks.at(i));
+        cout << "*************************************\n";
+    }
+}
