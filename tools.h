@@ -26,7 +26,7 @@ void obtenerDatos(istream &file,int nlines,int n,int mode,item* item_list){
 void leerMallayCondiciones(mesh &m){
     char filename[10];
     ifstream file;
-    float k,Q;
+    float E, A, F;
     int nnodes,neltos,ndirich,nneu;
 
   do{
@@ -35,10 +35,10 @@ void leerMallayCondiciones(mesh &m){
      file.open(filename);
     }while(!file);
 
-    file >> k >> Q;
+    file >> E >> A >> F;
     file >> nnodes >> neltos >> ndirich >> nneu;
 
-    m.setParameters(k,Q);
+    m.setParameters(E, A, F);
     m.setSizes(nnodes,neltos,ndirich,nneu);
     m.createData();
 
